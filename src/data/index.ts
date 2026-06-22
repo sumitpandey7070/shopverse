@@ -7,8 +7,13 @@ export const products: Product[] = [
     description: 'The most powerful iPhone ever with the A17 Pro chip, titanium design, and an advanced camera system. Experience the future of smartphone technology with ProRAW and ProRes video capabilities.',
     shortDescription: 'A17 Pro chip, titanium design, 48MP camera system',
     price: 134999, originalPrice: 149999, discount: 10,
-    images: ['https://picsum.photos/seed/iphone1/800/800','https://picsum.photos/seed/iphone2/800/800','https://picsum.photos/seed/iphone3/800/800','https://picsum.photos/seed/iphone4/800/800'],
-    thumbnail: 'https://picsum.photos/seed/iphone1/400/400',
+    images: [
+      'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=800&hei=800&fmt=jpeg&qlt=90&.v=1692845663782',
+      'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-blacktitanium?wid=800&hei=800&fmt=jpeg&qlt=90&.v=1692845662711',
+      'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-whitetitanium?wid=800&hei=800&fmt=jpeg&qlt=90&.v=1692845663435',
+      'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-bluetitanium?wid=800&hei=800&fmt=jpeg&qlt=90&.v=1692845663219'
+    ],
+    thumbnail: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1692845663782',
     category: 'electronics', subcategory: 'smartphones', brand: 'Apple', brandLogo: 'https://picsum.photos/seed/apple/100/100',
     rating: 4.8, reviewCount: 2847, stock: 45, isFeatured: true, isNew: true, isBestSeller: true, isFlashSale: false,
     tags: ['5G', 'ProMax', 'Titanium', 'iOS 17'], colors: [{ label: 'Natural Titanium', value: 'natural', hex: '#b5a99a', available: true }, { label: 'Black Titanium', value: 'black', hex: '#1c1c1e', available: true }, { label: 'White Titanium', value: 'white', hex: '#f5f5f0', available: false }],
@@ -20,8 +25,12 @@ export const products: Product[] = [
     description: 'Galaxy AI is here. The Galaxy S24 Ultra brings the most advanced AI features to a smartphone, with the S Pen, 200MP camera, and titanium frame.',
     shortDescription: '200MP camera, Galaxy AI, S Pen included',
     price: 129999, originalPrice: 139999, discount: 7,
-    images: ['https://picsum.photos/seed/samsung1/800/800','https://picsum.photos/seed/samsung2/800/800','https://picsum.photos/seed/samsung3/800/800'],
-    thumbnail: 'https://picsum.photos/seed/samsung1/400/400',
+    images: [
+      'https://images.samsung.com/is/image/samsung/p6im/in/2401/gallery/in-galaxy-s24-s928-sm-s928bztnins-thumb-539569720?wid=800&hei=800',
+      'https://images.samsung.com/is/image/samsung/p6im/in/2401/gallery/in-galaxy-s24-s928-sm-s928bztnins-539569734?wid=800&hei=800',
+      'https://images.samsung.com/is/image/samsung/p6im/in/2401/gallery/in-galaxy-s24-s928-sm-s928bztnins-539569731?wid=800&hei=800'
+    ],
+    thumbnail: 'https://images.samsung.com/is/image/samsung/p6im/in/2401/gallery/in-galaxy-s24-s928-sm-s928bztnins-thumb-539569720?wid=400&hei=400',
     category: 'electronics', subcategory: 'smartphones', brand: 'Samsung', brandLogo: 'https://picsum.photos/seed/samsung/100/100',
     rating: 4.7, reviewCount: 1956, stock: 78, isFeatured: true, isNew: true, isBestSeller: false, isFlashSale: true, flashSaleEnd: new Date(Date.now() + 86400000 * 2).toISOString(),
     tags: ['5G', 'Galaxy AI', 'S Pen', 'Android 14'], colors: [{ label: 'Titanium Black', value: 'black', hex: '#1a1a2e', available: true }, { label: 'Titanium Gray', value: 'gray', hex: '#6b7280', available: true }, { label: 'Titanium Violet', value: 'violet', hex: '#7c3aed', available: true }],
@@ -33,8 +42,12 @@ export const products: Product[] = [
     description: 'Industry-leading noise cancellation with two chips and eight microphones. Up to 30 hours battery life. Crystal clear hands-free calling. Lightweight folding design.',
     shortDescription: 'Best-in-class ANC, 30hr battery, premium sound',
     price: 24999, originalPrice: 34999, discount: 28,
-    images: ['https://picsum.photos/seed/sony1/800/800','https://picsum.photos/seed/sony2/800/800','https://picsum.photos/seed/sony3/800/800'],
-    thumbnail: 'https://picsum.photos/seed/sony1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop',
     category: 'electronics', subcategory: 'headphones', brand: 'Sony', brandLogo: 'https://picsum.photos/seed/sony/100/100',
     rating: 4.9, reviewCount: 4231, stock: 120, isFeatured: true, isNew: false, isBestSeller: true, isFlashSale: true, flashSaleEnd: new Date(Date.now() + 86400000).toISOString(),
     tags: ['ANC', 'Bluetooth 5.2', 'Hi-Res Audio', 'LDAC'], colors: [{ label: 'Midnight Black', value: 'black', hex: '#1a1a1a', available: true }, { label: 'Platinum Silver', value: 'silver', hex: '#c0c0c0', available: true }],
@@ -46,8 +59,12 @@ export const products: Product[] = [
     description: 'The MacBook Pro with M3 Pro chip brings unprecedented performance and efficiency. With up to 22 hours of battery life and a stunning Liquid Retina XDR display.',
     shortDescription: 'M3 Pro chip, Liquid Retina XDR, 22hr battery',
     price: 199999, originalPrice: 219999, discount: 9,
-    images: ['https://picsum.photos/seed/macbook1/800/800','https://picsum.photos/seed/macbook2/800/800','https://picsum.photos/seed/macbook3/800/800'],
-    thumbnail: 'https://picsum.photos/seed/macbook1/400/400',
+    images: [
+      'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=800&hei=800&fmt=jpeg&qlt=90&.v=1697311053478',
+      'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-gallery1-202310?wid=800&hei=800&fmt=jpeg&qlt=90&.v=1697528373787',
+      'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-gallery2-202310?wid=800&hei=800&fmt=jpeg&qlt=90&.v=1697528373782'
+    ],
+    thumbnail: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1697311053478',
     category: 'electronics', subcategory: 'laptops', brand: 'Apple', brandLogo: 'https://picsum.photos/seed/apple/100/100',
     rating: 4.9, reviewCount: 1234, stock: 30, isFeatured: true, isNew: true, isBestSeller: true, isFlashSale: false,
     tags: ['M3 Pro', 'MacOS', 'Retina XDR', 'ProRes'],
@@ -59,8 +76,12 @@ export const products: Product[] = [
     description: 'The Nike Air Max 270 React combines two of our greatest cushioning technologies for a soft, responsive feel that\'s built to last. The React foam midsole delivers a smooth, springy ride.',
     shortDescription: 'React foam + Air Max 270 unit for ultimate comfort',
     price: 12999, originalPrice: 15999, discount: 18,
-    images: ['https://picsum.photos/seed/nike1/800/800','https://picsum.photos/seed/nike2/800/800','https://picsum.photos/seed/nike3/800/800'],
-    thumbnail: 'https://picsum.photos/seed/nike1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=400&auto=format&fit=crop',
     category: 'fashion', subcategory: 'sneakers', brand: 'Nike', brandLogo: 'https://picsum.photos/seed/nike/100/100',
     rating: 4.5, reviewCount: 867, stock: 200, isFeatured: false, isNew: false, isBestSeller: true, isFlashSale: true, flashSaleEnd: new Date(Date.now() + 86400000 * 3).toISOString(),
     tags: ['Running', 'Lifestyle', 'Air Max', 'React Foam'],
@@ -74,8 +95,11 @@ export const products: Product[] = [
     description: 'Our most powerful, intelligent cordless vacuum. Laser reveals microscopic dust. Piezo sensor counts and sizes particles. Automatically adapts suction power.',
     shortDescription: 'Laser dust detection, 60min run time, HEPA filtration',
     price: 54999, originalPrice: 64999, discount: 15,
-    images: ['https://picsum.photos/seed/dyson1/800/800','https://picsum.photos/seed/dyson2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/dyson1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1563161402-8b63452db63d?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=400&auto=format&fit=crop',
     category: 'home', subcategory: 'vacuum-cleaners', brand: 'Dyson', brandLogo: 'https://picsum.photos/seed/dyson/100/100',
     rating: 4.7, reviewCount: 589, stock: 55, isFeatured: true, isNew: false, isBestSeller: false, isFlashSale: false,
     tags: ['Cordless', 'HEPA', 'Laser Detect', '60min'],
@@ -87,8 +111,11 @@ export const products: Product[] = [
     description: 'The original and most iconic jeans. Button fly, straight leg, and a 5-pocket style. Made with premium denim that\'s built to last decades.',
     shortDescription: 'Original button fly, straight leg, premium denim',
     price: 4499, originalPrice: 5999, discount: 25,
-    images: ['https://picsum.photos/seed/levis1/800/800','https://picsum.photos/seed/levis2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/levis1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=400&auto=format&fit=crop',
     category: 'fashion', subcategory: 'jeans', brand: "Levi's", brandLogo: 'https://picsum.photos/seed/levis/100/100',
     rating: 4.4, reviewCount: 3421, stock: 500, isFeatured: false, isNew: false, isBestSeller: true, isFlashSale: false,
     tags: ['Denim', 'Casual', 'Straight Fit', 'Classic'],
@@ -102,8 +129,12 @@ export const products: Product[] = [
     description: 'Experience perfect blacks, infinite contrast, and over a billion colors. The LG OLED C3 features the α9 AI Processor Gen6, Dolby Vision IQ, and a gaming-ready 120Hz display.',
     shortDescription: 'OLED evo panel, α9 Gen6 AI, 120Hz, Dolby Vision',
     price: 149999, originalPrice: 179999, discount: 16,
-    images: ['https://picsum.photos/seed/lg1/800/800','https://picsum.photos/seed/lg2/800/800','https://picsum.photos/seed/lg3/800/800'],
-    thumbnail: 'https://picsum.photos/seed/lg1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1552533889-49f38a509500?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=400&auto=format&fit=crop',
     category: 'electronics', subcategory: 'televisions', brand: 'LG', brandLogo: 'https://picsum.photos/seed/lg/100/100',
     rating: 4.8, reviewCount: 987, stock: 25, isFeatured: true, isNew: false, isBestSeller: false, isFlashSale: false,
     tags: ['OLED', '4K', '120Hz', 'Dolby Vision', 'webOS'],
@@ -115,8 +146,11 @@ export const products: Product[] = [
     description: 'Your multicooker of choice — pressure cooker, slow cooker, rice cooker, steamer, sauté, yogurt maker, and food warmer. Cooks up to 70% faster.',
     shortDescription: '7-in-1 multicooker, 6Qt, 13 one-touch programs',
     price: 6999, originalPrice: 9999, discount: 30,
-    images: ['https://picsum.photos/seed/instant1/800/800','https://picsum.photos/seed/instant2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/instant1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1547032175-7fc8c7bd15b3?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?q=80&w=400&auto=format&fit=crop',
     category: 'home', subcategory: 'kitchen', brand: 'Instant Pot', brandLogo: 'https://picsum.photos/seed/instant/100/100',
     rating: 4.6, reviewCount: 12456, stock: 300, isFeatured: false, isNew: false, isBestSeller: true, isFlashSale: true, flashSaleEnd: new Date(Date.now() + 86400000 * 1.5).toISOString(),
     tags: ['Pressure Cooker', 'Multi-use', 'Steel', 'Easy Clean'],
@@ -128,8 +162,11 @@ export const products: Product[] = [
     description: 'Our best ultraboost yet — made with Primeknit+ upper and Boost midsole for incredible energy return. The Continental rubber outsole delivers superior grip.',
     shortDescription: 'Primeknit+, Boost midsole, Continental rubber',
     price: 17999, originalPrice: 21999, discount: 18,
-    images: ['https://picsum.photos/seed/adidas1/800/800','https://picsum.photos/seed/adidas2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/adidas1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=400&auto=format&fit=crop',
     category: 'fashion', subcategory: 'sneakers', brand: 'Adidas', brandLogo: 'https://picsum.photos/seed/adidas/100/100',
     rating: 4.6, reviewCount: 1543, stock: 150, isFeatured: true, isNew: false, isBestSeller: false, isFlashSale: false,
     tags: ['Running', 'Boost', 'Primeknit', 'Continental'],
@@ -143,8 +180,11 @@ export const products: Product[] = [
     description: 'The ultimate iPad experience with the M2 chip, Liquid Retina XDR display, ProMotion technology, and support for Apple Pencil hover.',
     shortDescription: 'M2 chip, Liquid Retina XDR, Apple Pencil hover',
     price: 112900, originalPrice: 124900, discount: 9,
-    images: ['https://picsum.photos/seed/ipad1/800/800','https://picsum.photos/seed/ipad2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/ipad1/400/400',
+    images: [
+      'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-model-select-gallery-1-202212?wid=800&hei=800&fmt=jpeg&qlt=90&.v=1671752726590',
+      'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-model-select-gallery-2-202212?wid=800&hei=800&fmt=jpeg&qlt=90&.v=1667593649661'
+    ],
+    thumbnail: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-model-select-gallery-1-202212?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1671752726590',
     category: 'electronics', subcategory: 'tablets', brand: 'Apple', brandLogo: 'https://picsum.photos/seed/apple/100/100',
     rating: 4.8, reviewCount: 876, stock: 40, isFeatured: true, isNew: true, isBestSeller: false, isFlashSale: false,
     tags: ['M2', 'Retina XDR', 'ProMotion', 'USB-C'],
@@ -156,8 +196,11 @@ export const products: Product[] = [
     description: 'Premium Bluetooth headphones with 20 hours playback, 40mm dynamic drivers, and immersive deep bass. Foldable design with voice assistant support.',
     shortDescription: '20hr playback, 40mm drivers, foldable design',
     price: 1799, originalPrice: 3990, discount: 54,
-    images: ['https://picsum.photos/seed/boat1/800/800','https://picsum.photos/seed/boat2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/boat1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop',
     category: 'electronics', subcategory: 'headphones', brand: 'boAt', brandLogo: 'https://picsum.photos/seed/boat/100/100',
     rating: 4.1, reviewCount: 28943, stock: 800, isFeatured: false, isNew: false, isBestSeller: true, isFlashSale: true, flashSaleEnd: new Date(Date.now() + 86400000 * 0.5).toISOString(),
     tags: ['Bluetooth 5.0', 'Bass', '20hr', 'Foldable'],
@@ -170,13 +213,16 @@ export const products: Product[] = [
     description: 'The Wayfarer is the most recognized frame in eyewear history. Available in a variety of lens and frame color combinations. 100% UV protection.',
     shortDescription: 'Iconic design, 100% UV protection, G-15 lens',
     price: 8999, originalPrice: 11999, discount: 25,
-    images: ['https://picsum.photos/seed/rayban1/800/800','https://picsum.photos/seed/rayban2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/rayban1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=400&auto=format&fit=crop',
     category: 'fashion', subcategory: 'sunglasses', brand: 'Ray-Ban', brandLogo: 'https://picsum.photos/seed/rayban/100/100',
     rating: 4.7, reviewCount: 2145, stock: 90, isFeatured: false, isNew: false, isBestSeller: true, isFlashSale: false,
     tags: ['UV Protection', 'Iconic', 'Unisex', 'Acetate'],
     colors: [{ label: 'Black/G-15', value: 'black', hex: '#1a1a1a', available: true }, { label: 'Tortoise', value: 'tortoise', hex: '#8B4513', available: true }],
-    specifications: { 'Frame': 'Acetate', 'Lens': 'G-15 Crystal Glass', 'UV Protection': '100% UV400', 'Frame Width': '150mm', 'Lens Width': '50mm', 'Bridge': '22mm' },
+    specifications: { 'Frame': 'Acetate', 'Lens': 'G-15' , 'UV Protection': '100% UV400', 'Frame Width': '150mm', 'Lens Width': '50mm', 'Bridge': '22mm' },
     seller: 'Ray-Ban India', sellerId: 's11', freeShipping: true, deliveryDays: 3
   },
   {
@@ -184,8 +230,11 @@ export const products: Product[] = [
     description: '4K UHD display with HDR10+ and Dolby Vision. Built-in Android TV with Google Assistant. Ambilight technology creates an immersive viewing experience.',
     shortDescription: '4K UHD, Ambilight, Android TV, Dolby Vision',
     price: 59999, originalPrice: 74999, discount: 20,
-    images: ['https://picsum.photos/seed/philips1/800/800','https://picsum.photos/seed/philips2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/philips1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1593789198777-f29bc259780e?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1593789198777-f29bc259780e?q=80&w=400&auto=format&fit=crop',
     category: 'electronics', subcategory: 'televisions', brand: 'Philips', brandLogo: 'https://picsum.photos/seed/philips/100/100',
     rating: 4.3, reviewCount: 432, stock: 60, isFeatured: false, isNew: false, isBestSeller: false, isFlashSale: false,
     tags: ['4K', 'Ambilight', 'Android TV', 'HDR10+'],
@@ -197,8 +246,11 @@ export const products: Product[] = [
     description: 'Powered by Snapdragon 8 Gen 3, the OnePlus 12 delivers flagship performance with Hasselblad-tuned cameras, 100W SUPERVOOC charging, and a 5400mAh battery.',
     shortDescription: 'Snapdragon 8 Gen 3, Hasselblad cameras, 100W charging',
     price: 64999, originalPrice: 69999, discount: 7,
-    images: ['https://picsum.photos/seed/oneplus1/800/800','https://picsum.photos/seed/oneplus2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/oneplus1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=400&auto=format&fit=crop',
     category: 'electronics', subcategory: 'smartphones', brand: 'OnePlus', brandLogo: 'https://picsum.photos/seed/oneplus/100/100',
     rating: 4.6, reviewCount: 3456, stock: 90, isFeatured: true, isNew: true, isBestSeller: false, isFlashSale: false,
     tags: ['5G', 'Hasselblad', '100W', 'AMOLED'],
@@ -211,8 +263,11 @@ export const products: Product[] = [
     description: 'The Fossil Gen 6 is our fastest smartwatch yet with Snapdragon Wear 4100+ platform, 20% faster charging, and all-day wellness tracking.',
     shortDescription: 'Wear OS 3, SpO2, rapid charging, 44mm',
     price: 22999, originalPrice: 29999, discount: 23,
-    images: ['https://picsum.photos/seed/fossil1/800/800','https://picsum.photos/seed/fossil2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/fossil1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop',
     category: 'electronics', subcategory: 'smartwatches', brand: 'Fossil', brandLogo: 'https://picsum.photos/seed/fossil/100/100',
     rating: 4.2, reviewCount: 678, stock: 70, isFeatured: false, isNew: false, isBestSeller: false, isFlashSale: false,
     tags: ['Wear OS', 'SpO2', 'GPS', 'AMOLED'],
@@ -225,8 +280,11 @@ export const products: Product[] = [
     description: 'Made from the finest Arabica and Robusta beans, Nescafé Gold Blend gives you a rich, balanced flavour with a smooth aroma. Premium instant coffee experience.',
     shortDescription: '200g, Arabica & Robusta blend, premium instant',
     price: 1099, originalPrice: 1299, discount: 15,
-    images: ['https://picsum.photos/seed/coffee1/800/800','https://picsum.photos/seed/coffee2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/coffee1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=400&auto=format&fit=crop',
     category: 'grocery', subcategory: 'beverages', brand: 'Nescafé', brandLogo: 'https://picsum.photos/seed/nestle/100/100',
     rating: 4.5, reviewCount: 8765, stock: 1000, isFeatured: false, isNew: false, isBestSeller: true, isFlashSale: false,
     tags: ['Instant Coffee', 'Arabica', 'Robusta', '200g'],
@@ -238,8 +296,11 @@ export const products: Product[] = [
     description: 'The Xiaomi Mi 11 Ultra pushes boundaries with its 50MP main camera with 120x zoom, 5000mAh battery with 67W fast charging, and Snapdragon 888.',
     shortDescription: 'Snapdragon 888, 50MP+120x, 67W fast charging',
     price: 59999, originalPrice: 69999, discount: 14,
-    images: ['https://picsum.photos/seed/xiaomi1/800/800','https://picsum.photos/seed/xiaomi2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/xiaomi1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1565849563870-070f1f1807d9?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1565849563870-070f1f1807d9?q=80&w=400&auto=format&fit=crop',
     category: 'electronics', subcategory: 'smartphones', brand: 'Xiaomi', brandLogo: 'https://picsum.photos/seed/xiaomi/100/100',
     rating: 4.4, reviewCount: 2109, stock: 55, isFeatured: false, isNew: false, isBestSeller: false, isFlashSale: false,
     tags: ['5G', 'Ultra Camera', '67W', 'MIUI'],
@@ -252,8 +313,11 @@ export const products: Product[] = [
     description: 'The MX Master 3S features a 8K DPI sensor, near-silent clicks, MagSpeed electromagnetic scrolling, and USB-C charging. Works on any surface.',
     shortDescription: '8K DPI, MagSpeed scroll, silent clicks, USB-C',
     price: 9995, originalPrice: 11995, discount: 16,
-    images: ['https://picsum.photos/seed/logitech1/800/800','https://picsum.photos/seed/logitech2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/logitech1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop',
     category: 'electronics', subcategory: 'accessories', brand: 'Logitech', brandLogo: 'https://picsum.photos/seed/logitech/100/100',
     rating: 4.8, reviewCount: 4567, stock: 200, isFeatured: true, isNew: false, isBestSeller: true, isFlashSale: false,
     tags: ['Wireless', 'MagSpeed', '8K DPI', 'Multi-device'],
@@ -266,8 +330,11 @@ export const products: Product[] = [
     description: 'Whirlpool\'s Intellifresh Pro refrigerator with 6th Sense technology intelligently adapts to your usage patterns to keep food fresher for longer.',
     shortDescription: '265L, 6th Sense, IntelliSense Inverter, 4★ Rating',
     price: 27990, originalPrice: 34990, discount: 20,
-    images: ['https://picsum.photos/seed/whirlpool1/800/800','https://picsum.photos/seed/whirlpool2/800/800'],
-    thumbnail: 'https://picsum.photos/seed/whirlpool1/400/400',
+    images: [
+      'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1571843439991-dd2b8e051966?q=80&w=800&auto=format&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=400&auto=format&fit=crop',
     category: 'home', subcategory: 'appliances', brand: 'Whirlpool', brandLogo: 'https://picsum.photos/seed/whirlpool/100/100',
     rating: 4.3, reviewCount: 1234, stock: 35, isFeatured: false, isNew: false, isBestSeller: false, isFlashSale: false,
     tags: ['Frost Free', 'Inverter', '6th Sense', 'BEE 4 Star'],
