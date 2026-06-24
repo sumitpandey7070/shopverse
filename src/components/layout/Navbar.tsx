@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
               <span>Free delivery on orders over ₹999</span>
             </span>
             <span className="dark:text-slate-400 text-slate-400">|</span>
-            <span>Download the ShopVerse App</span>
+            <span>Download the SumitXShop App</span>
           </div>
           <div className="flex items-center gap-4">
             {/* Language Selector */}
@@ -147,7 +147,7 @@ const Navbar: React.FC = () => {
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-500 to-violet-500 flex items-center justify-center shadow-glow-primary">
                 <HiSparkles className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-black gradient-text hidden sm:block">ShopVerse</span>
+              <span className="text-xl font-black gradient-text hidden sm:block font-display">SumitXShop</span>
             </Link>
 
             {/* Categories Mega Menu Trigger */}
@@ -443,8 +443,8 @@ const Navbar: React.FC = () => {
               { label: 'Sports', to: '/products?category=sports' },
               { label: 'Beauty', to: '/products?category=beauty' },
               { label: 'Books', to: '/products?category=books' },
-              { label: 'Grocery', to: '/products?category=grocery' },
-              { label: 'Sell on ShopVerse', to: '/dashboard/seller' },
+              { label: 'Compare', to: '/compare' },
+              { label: 'Sell on SumitXShop', to: '/dashboard/seller' },
             ].map(link => (
               <Link
                 key={link.label}

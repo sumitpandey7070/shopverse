@@ -1,51 +1,100 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { brands } from '@/data';
-import { SiApple, SiSamsung, SiNike, SiAdidas, SiSony, SiLg, SiLogitech } from 'react-icons/si';
+import { FiArrowRight } from 'react-icons/fi';
+import {
+  SiApple, SiSamsung, SiNike, SiAdidas, SiSony, SiLg, SiLogitech, SiAsus, SiDell,
+} from 'react-icons/si';
 
-const brandIcons: Record<string, React.ReactNode> = {
-  b1: <SiApple className="w-8 h-8 text-slate-800 dark:text-slate-200" />,
-  b2: <SiSamsung className="w-12 h-12 text-[#1428a0] dark:text-[#3b82f6]" />,
-  b3: <SiNike className="w-10 h-10 text-slate-900 dark:text-white" />,
-  b4: <SiAdidas className="w-8 h-8 text-slate-900 dark:text-white" />,
-  b5: <SiSony className="w-12 h-12 text-slate-900 dark:text-white" />,
-  b6: <SiLg className="w-8 h-8 text-[#a50034] dark:text-rose-500" />,
-  b7: <span className="text-sm font-extrabold tracking-tighter text-slate-900 dark:text-white uppercase font-sans">dyson</span>,
-  b8: <SiLogitech className="w-8 h-8 text-[#00b0f0] dark:text-cyan-400" />,
-};
+const topRowBrands = [
+  { id: 'apple',    icon: <SiApple className="w-7 h-7 dark:text-slate-200 text-slate-800" />, name: 'Apple' },
+  { id: 'samsung',  icon: <SiSamsung className="w-10 h-10 text-[#1428a0] dark:text-[#5b8dee]" />, name: 'Samsung' },
+  { id: 'nike',     icon: <SiNike className="w-9 h-9 dark:text-white text-slate-900" />, name: 'Nike' },
+  { id: 'sony',     icon: <SiSony className="w-10 h-10 dark:text-white text-slate-900" />, name: 'Sony' },
+  { id: 'lg',       icon: <SiLg className="w-7 h-7 text-[#a50034] dark:text-rose-400" />, name: 'LG' },
+  { id: 'adidas',   icon: <SiAdidas className="w-7 h-7 dark:text-white text-slate-900" />, name: 'Adidas' },
+  { id: 'logitech', icon: <SiLogitech className="w-8 h-8 text-[#00b0f0] dark:text-cyan-400" />, name: 'Logitech' },
+  { id: 'dell',     icon: <SiDell className="w-8 h-8 text-[#007DB8] dark:text-blue-400" />, name: 'Dell' },
+];
+
+const bottomRowBrands = [
+  { id: 'asus',    icon: <SiAsus className="w-8 h-8 text-[#00539B] dark:text-blue-300" />, name: 'Asus' },
+  { id: 'ms',      icon: <span className="text-[11px] font-black tracking-tight dark:text-slate-200 text-slate-800">Microsoft</span>, name: 'Microsoft' },
+  { id: 'dyson',   icon: <span className="text-base font-black tracking-tighter uppercase dark:text-white text-slate-900">dyson</span>, name: 'Dyson' },
+  { id: 'oneplus', icon: <span className="text-[11px] font-black tracking-tight dark:text-slate-200 text-slate-800">OnePlus</span>, name: 'OnePlus' },
+  { id: 'boat',    icon: <span className="text-sm font-black italic dark:text-amber-400 text-amber-600">boAt</span>, name: 'boAt' },
+  { id: 'rayban',  icon: <span className="text-[10px] font-bold tracking-widest dark:text-slate-200 text-slate-800">RAY-BAN</span>, name: 'Ray-Ban' },
+  { id: 'garmin',  icon: <span className="text-[10px] font-bold tracking-wider text-[#006DBE] dark:text-blue-400">GARMIN</span>, name: 'Garmin' },
+  { id: 'fossil',  icon: <span className="text-[10px] font-black tracking-widest dark:text-slate-300 text-slate-700">FOSSIL</span>, name: 'Fossil' },
+];
+
+const BrandChip: React.FC<{ brand: { id: string; icon: React.ReactNode; name: string; color?: string } }> = ({ brand }) => (
+  <div className="flex-shrink-0 flex flex-col items-center gap-2 mx-5 group cursor-pointer">
+    <div className="w-16 h-16 flex items-center justify-center rounded-2xl dark:bg-dark-card bg-white border dark:border-dark-border border-slate-200 shadow-sm group-hover:shadow-glow-primary group-hover:border-primary-500/40 transition-all duration-300 dark:text-slate-200 text-slate-700">
+      {brand.icon}
+    </div>
+    <span className="text-xs font-semibold dark:text-slate-400 text-slate-500 group-hover:text-primary-400 transition-colors">
+      {brand.name}
+    </span>
+  </div>
+);
 
 const FeaturedBrands: React.FC = () => (
-  <section className="max-w-7xl mx-auto px-4 sm:px-6 mt-20">
-    <div className="text-center mb-10">
-      <h2 className="text-2xl sm:text-3xl font-bold dark:text-white text-slate-900 mb-2">Top Brands</h2>
-      <p className="dark:text-slate-400 text-slate-600">Shop from world's most trusted brands</p>
+  <section className="mt-20 overflow-hidden">
+    {/* Header */}
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-10 text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full dark:bg-primary-500/10 bg-primary-50 border dark:border-primary-500/20 border-primary-200 text-primary-500 text-xs font-semibold mb-4">
+          ✦ Trusted Partners
+        </div>
+        <h2 className="text-2xl sm:text-3xl font-black dark:text-white text-slate-900 mb-2 font-display">
+          World-Class{' '}
+          <span className="gradient-text">Premium Brands</span>
+        </h2>
+        <p className="dark:text-slate-400 text-slate-600 text-sm max-w-md mx-auto">
+          Shop authentic products from globally trusted brands, all with official warranty
+        </p>
+      </motion.div>
     </div>
-    <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
-      {brands.map((brand, i) => (
-        <motion.div
-          key={brand.id}
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: i * 0.06 }}
-          whileHover={{ scale: 1.08, y: -4 }}
-          className="flex flex-col items-center gap-2 p-4 rounded-2xl dark:bg-dark-card bg-white border dark:border-dark-border border-slate-200 dark:hover:border-primary-500/30 hover:border-primary-300 transition-all cursor-pointer hover:shadow-card-dark group"
-        >
-          <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800/80 group-hover:bg-slate-100/50 dark:group-hover:bg-slate-800/50 transition-colors">
-            {brandIcons[brand.id] || (
-              <img
-                src={brand.logo}
-                alt={brand.name}
-                className="w-10 h-10 object-contain dark:opacity-80 opacity-100 group-hover:opacity-100 transition-opacity"
-              />
-            )}
-          </div>
-          <span className="text-xs font-semibold dark:text-slate-400 text-slate-600 group-hover:text-primary-400 transition-colors text-center">{brand.name}</span>
-        </motion.div>
-      ))}
+
+    {/* Fade edges */}
+    <div className="relative">
+      <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none dark:bg-gradient-to-r dark:from-dark-bg bg-gradient-to-r from-slate-50 to-transparent" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none dark:bg-gradient-to-l dark:from-dark-bg bg-gradient-to-l from-slate-50 to-transparent" />
+
+      {/* Row 1 — Left to Right */}
+      <div className="flex overflow-hidden mb-4">
+        <div className="marquee-track flex items-end pb-2">
+          {[...topRowBrands, ...topRowBrands, ...topRowBrands].map((b, i) => (
+            <BrandChip key={`${b.id}-${i}`} brand={b} />
+          ))}
+        </div>
+      </div>
+
+      {/* Row 2 — Right to Left */}
+      <div className="flex overflow-hidden">
+        <div className="marquee-track-reverse flex items-end pb-2">
+          {[...bottomRowBrands, ...bottomRowBrands, ...bottomRowBrands].map((b, i) => (
+            <BrandChip key={`${b.id}-${i}`} brand={b} />
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* CTA */}
+    <div className="text-center mt-8">
+      <Link
+        to="/products"
+        className="inline-flex items-center gap-2 text-sm font-semibold text-primary-400 hover:text-primary-300 transition-colors"
+      >
+        View all brands <FiArrowRight className="w-4 h-4" />
+      </Link>
     </div>
   </section>
 );
 
 export default FeaturedBrands;
-
